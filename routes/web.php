@@ -13,4 +13,5 @@ Route::get('/home/clients',[ClientController::class,"index"])->name('home.client
 Route::get("/client/show/{client}", [ClientController::class, "show"])->name("client.show");
 
 
-Route::get('/home/eventdirectors',[EventDirectoreController::class,"index"])->name('home.eventdirectors');
+Route::get('/home/eventdirectors', [EventDirectoreController::class, "index"])->name('home.eventdirectors');
+Route::get("/eventdirectore/show/{eventdirectore}", [EventDirectoreController::class, "show"])->name("eventdirectore.show");

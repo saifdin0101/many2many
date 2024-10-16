@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\EventDirectore;
+use App\Models\event;
 use Illuminate\Http\Request;
 
-class EventDirectoreController extends Controller
+class EventController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,6 @@ class EventDirectoreController extends Controller
     public function index()
     {
         //
-        $eventdirectors = EventDirectore::all();
-        return view("partials.eventdirectore",compact('eventdirectors'));
     }
 
     /**
@@ -36,16 +34,15 @@ class EventDirectoreController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(EventDirectore $eventDirectore)
+    public function show(event $event)
     {
         //
-        return view('partials.directorShow',compact('eventDirectore'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(EventDirectore $eventDirectore)
+    public function edit(event $event)
     {
         //
     }
@@ -53,7 +50,7 @@ class EventDirectoreController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, EventDirectore $eventDirectore)
+    public function update(Request $request, event $event)
     {
         //
     }
@@ -61,7 +58,7 @@ class EventDirectoreController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(EventDirectore $eventDirectore)
+    public function destroy(event $event)
     {
         //
     }
