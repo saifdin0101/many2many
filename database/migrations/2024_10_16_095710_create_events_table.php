@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
+            $table->string('event_name');
+            $table->string('event_subject');
+            $table->string('event_image');
+            // $table->foreignId('event_directore_id')->constrained('event_directores')->onDelete('cascade'); 
             $table->timestamps();
         });
     }

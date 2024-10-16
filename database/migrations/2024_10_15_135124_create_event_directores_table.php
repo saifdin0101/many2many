@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('event_directores', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('admin_id')->constrained()->onDelete('cascade'); // Foreign key constraint
+            $table->foreignId('admin_id')->constrained()->onDelete('cascade'); 
             $table->string('director_name'); 
             $table->timestamps();
         });

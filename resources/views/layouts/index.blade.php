@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="h-[100px] bg-[#2ebcf4] flex justify-center items-center gap-[300px]">
-        <div>Saif</div>
+        <div class="font-semibold text-4xl">Saif</div>
         <div class="flex justify-center items-center gap-10">
             <a href="/">Home</a>
             <a href="">Events</a>

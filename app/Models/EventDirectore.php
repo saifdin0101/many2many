@@ -12,4 +12,8 @@ class EventDirectore extends Model
         'admin_id',
         'director_name',
     ];
+    // public function Events() {
+
+    //     return $this->hasMany(event::class);
+    // }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -39,7 +40,8 @@ class ClientController extends Controller
     public function show(Client $client)
     {
         //
-        return view('partials.show',compact('client'));
+        $events = Event::all();
+        return view('partials.show',compact('client','events'));
     }
 
     /**

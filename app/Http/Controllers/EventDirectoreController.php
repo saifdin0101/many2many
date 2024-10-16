@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\event;
 use App\Models\EventDirectore;
 use Illuminate\Http\Request;
 
@@ -39,7 +40,8 @@ class EventDirectoreController extends Controller
     public function show(EventDirectore $eventDirectore)
     {
         //
-        return view('partials.directorShow',compact('eventDirectore'));
+        $events = event::all();
+        return view('partials.directorShow',compact('eventDirectore','events'));
     }
 
     /**
